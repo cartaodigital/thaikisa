@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    body{
+    overflow-x: hidden;  
+    background:#ffffff;
+    }
+    
+    /* CARD */
+    
+    .card{
+    
+        width:100%;
+        min-height:100vh;
+        
+        display:flex;
+        flex-direction:column;
+        
+        position:relative;
+        padding-top:10px;
+    
+    }
+
+    .logo,
+.conteudo{
+position:relative;
+z-index:2;
+}
+    
+    /* CAPA */
+    
+    .capa{
+
+     width:100%;
+     height:300px;
+
+background-image:url("imagem/unicv.jpg");
+background-size:contain;
+background-position: center top;
+background-repeat: no-repeat;
+
+position:absolute;
+top: 0;
+left:0;
+
+z-index:0;
+    
+  
+    }
+
+    
+    /* SPLASH / ONDA */
+    
+    .capa::after{
+    
+    content:"";
+    position:absolute;
+    bottom:-1px;
+    left:0;
+    width:100%;
+    height:40px;
+    background:white;
+    border-radius:70% 50% 0 0;
+    
+    
+    }
+
+    .capa::before{
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:90%;
+        
+        background:linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+        );
+        }
+
+    .logo {
+    display:flex;
+    justify-content:center;       /* centraliza horizontalmente */
+    margin-top: 170px;            /* sobe a logo sobre a capa */
+    position:relative;
+    z-index:2;                    /* garante que fique acima da capa */
+}
+
+.logo img {
+    width:110px;                  /* tamanho da logo */
+    background:rgba(14, 71, 32, 0.781);             /* círculo branco por trás */
+    padding:8px;                  /* espaço entre logo e borda */
+    border-radius:30%;            /* deixa circular */
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);  /* leve sombra */
+}
+
+    .vendedora{
+
+        margin-top:10px;
+        font-size:20px;
+        color:#20120a;
+        
+        }
+        
+        .vendedora strong{
+        
+        color:#1e4d2b;
+        
+        }
+
+        .servicos{
+
+            list-style:none;
+            margin-top:15px;
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+            align-items:center;   /* centraliza a lista */
+            text-align:center;
+            
+            
+            }
+            
+            .servicos li{
+            
+            display:flex;
+            align-items:center;
+            gap:10px;
+            
+            font-size:15px;
+            color:#20120a;
+            
+            }
+            
+            .servicos i{
+            
+            color:#1e4d2b;
+            font-size:16px;
+            
+            }
+    
+ 
+    
+  
+    
+    /* CONTEUDO */
+    
+    .conteudo{
+    
+    text-align:center;
+    padding:25px;
+    margin-top:-10px;
+    
+    }
+    
+    
+    
+    .conteudo h2{
+    
+    color:#1e4d2b;
+    font-size:18px;
+    font-weight:500;
+    
+    }
+    
+    .descricao{
+    
+    margin-top:12px;
+    font-size:15px;
+    color:#22150b;
+    
+    }
+    
+    /* ICONES */
+    
+    .icones{
+    
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap: 20px;
+        max-width:280px;
+        margin: auto;
+        margin-top: 20px;
+        
+        
+        
+        
+    
+    }
+    
+    .icone{
+    
+        background:white;
+        padding: 10px;
+        border-radius:10px;
+        text-decoration:none;
+        color:#0f3d2e;
+        box-shadow:0 3px 10px rgba(0,0,0,0.08);
+        transition:0.3s;
+    
+    }
+
+    .icone i {
+        font-size:32px;
+        margin-bottom:10px;
+        color:#c8a55a;
+
+    }
+
+  
+   .icones a{
+    text-decoration: none; 
+    color: inherit;       
+}
+    
+    .icone:hover{
+    
+    transform:scale(1.15);
+    
+    }
+
+/* ============================= */
+/* RODAPÉ */
+/* ============================= */
+
+.rodape{
+    margin-top:5px;
+    padding:20px;
+    color:#666;
+    font-size:14px;
+    text-align: center;
+    }
+    
+    .rodape i{
+    font-size:22px;
+    margin-bottom:8px;
+    display:block;
+    }  
