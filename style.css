@@ -231,16 +231,33 @@ z-index:0;
 /* RODAPÉ */
 /* ============================= */
 
-.rodape{
-    margin-top:5px;
-    padding:20px;
-    color:#666;
-    font-size:14px;
-    text-align: center;
-    }
+.rodape {
+    position: relative;           /* necessário para o QR ficar absoluto */
+    padding: 20px;
     
-    .rodape i{
-    font-size:22px;
-    margin-bottom:8px;
-    display:block;
-    }  
+    text-align: center;           /* centraliza o texto */
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .rodape-texto {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .qr-footer {
+    position: absolute;
+    right: 2px;                  /* distancia da borda direita */
+    top: 50%;                      /* centraliza verticalmente */
+    transform: translateY(-30%);
+  }
+  
+  .qr-footer img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    background: white;
+    padding: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
