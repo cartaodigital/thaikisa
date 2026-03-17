@@ -95,7 +95,7 @@ z-index:0;
 }
 
 .logo img {
-    width:135px;                  /* tamanho da logo */
+    width:140px;                  /* tamanho da logo */
     background:rgba(14, 71, 32, 0.781);             /* círculo branco por trás */
     padding:8px;                  /* espaço entre logo e borda */
     border-radius:20%;            /* deixa circular */
