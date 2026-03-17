@@ -248,7 +248,7 @@ z-index:0;
   
   .qr-footer {
     position: absolute;
-    right: 2px;                  /* distancia da borda direita */
+    right: 14px;                  /* distancia da borda direita */
     top: 50%;                      /* centraliza verticalmente */
     transform: translateY(-30%);
   }
